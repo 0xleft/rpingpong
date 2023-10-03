@@ -2,6 +2,7 @@
 
 mod objects;
 mod game;
+mod brains;
 
 use eframe::egui;
 use egui::{containers::*, *};
@@ -11,6 +12,7 @@ fn main() -> Result<(), eframe::Error> {
         initial_window_size: Some(Vec2::new(800.0, 600.0)),
         ..Default::default()
     };
+
     eframe::run_native(
         "Ping Pong",
         options,
